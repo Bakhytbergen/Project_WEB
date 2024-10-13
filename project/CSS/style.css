@@ -1,0 +1,249 @@
+/* Global Styles */
+@import url(./header.css); 
+body {
+    
+    font-family: 'Arial', sans-serif; /* Set font family */
+    background: linear-gradient(145deg, #2E0249, #040F3D); /* Gradient background */
+    color: white; /* Text color */
+}
+
+.theme-toggle {
+    display: flex; /* Flex container for theme toggle */
+    align-items: center; /* Align items vertically */
+    gap: 5px; /* Space between items */
+}
+
+.theme-toggle input {
+    margin-left: 10px; /* Space between label and input */
+}
+
+.contact-btn {
+    background-color: #4C4FEB; /* Button background color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    color: white; /* Button text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact-btn:hover {
+    background-color: #6F72F9; /* Hover state color */
+}
+
+/* Main Section */
+main {
+    align-items: center; /* Center items vertically */
+    width: 80%; /* Set main section width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.intro {
+    display: flex; /* Flex container for intro */
+}
+
+.intro-text h2 {
+    font-size: 6rem; /* Large heading size */
+    line-height: 1; /* Line height */
+}
+
+.intro-text p {
+    width: 70%; /* Paragraph width */
+    font-size: 1.5rem; /* Font size */
+    margin: auto;
+}
+
+
+
+
+.background-circle .circle {
+    width: 400px; /* Circle width */
+    height: 400px; /* Circle height */
+    background: radial-gradient(circle, #FF79F9, #4C4FEB); /* Gradient background */
+    border-radius: 50%; /* Circular shape */
+    right: 100px; /* Positioning */
+    margin-top: 100px; /* Space above circle */
+}
+
+.skills-section {
+    text-align: center; /* Center text */
+    margin-top: 100px; /* Space above section */
+    color: #fff; /* Text color */
+}
+
+h2 {
+    font-size: 3em; /* Heading size */
+    font-family: 'Uindbase Font 1', sans-serif; /* Font family */
+}
+
+.skills-grid {
+    display: grid; /* Grid layout for skills */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items */
+    margin-top: 30px; /* Space above grid */
+}
+
+.skill-item {
+    display: flex; /* Flex container for skill item */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space between elements */
+    width: 400px; /* Set item width */
+}
+
+.skill-item p {
+    font-size: 1.5em; /* Font size */
+    font-family: 'Usually-font', sans-serif; /* Font family */
+}
+
+.skill-level {
+    display: flex; /* Flex container for skill level */
+    gap: 10px; /* Space between level indicators */
+}
+
+.skill-level span {
+    display: inline-block; /* Inline block for circles */
+    width: 20px; /* Circle width */
+    height: 20px; /* Circle height */
+    background-color: #ff00ff; /* Filled circle color */
+    border-radius: 50%; /* Circular shape */
+}
+
+.skill-level .empty {
+    background-color: #800080; /* Unfilled circle color */
+}
+
+a {
+    color: #00bfff; /* Link color */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Styles */
+@media(max-width:1220px) {
+    .background-circle .circle {
+        width: 350px; /* Adjusted circle width */
+        height: 350px; /* Adjusted circle height */
+    }
+    .intro-text h2 {
+        font-size: 4rem; /* Adjusted heading size */
+    }
+    .intro-text p {
+        width: 70%; /* Maintain paragraph width */
+        font-size: 1.2rem; /* Adjusted font size */
+    }
+}
+
+@media(max-width:950px) {
+    .background-circle .circle {
+        width: 300px; /* Adjusted circle width */
+        height: 300px; /* Adjusted circle height */
+    }
+    .intro-text h2 {
+        font-size: 3rem; /* Adjusted heading size */
+    }
+    .intro-text p {
+        width: 70%; /* Maintain paragraph width */
+        font-size: 1.1rem; /* Adjusted font size */
+    }
+    .skills-section {
+        text-align: center; /* Center text */
+        margin-top: 100px; /* Space above section */
+    }
+    h2 {
+        font-size: 2em; /* Adjusted heading size */
+    }
+    .skills-grid {
+        display: grid; /* Grid layout for skills */
+    }
+    .skill-item {
+        display: flex; /* Flex container for skill item */
+        gap: 3px; /* Space between elements */
+        width: 80%; /* Adjusted item width */
+    }
+    .skill-item p {
+        font-size: 1.5em; /* Font size */
+    }
+}
+
+@media(max-width:850px) {
+    .background-circle .circle {
+        width: 250px; /* Adjusted circle width */
+        height: 250px; /* Adjusted circle height */
+    }
+    .intro-text h2 {
+        font-size: 2.7rem; /* Adjusted heading size */
+    }
+    .intro-text p {
+        width: 70%; /* Maintain paragraph width */
+        font-size: 1.1rem; /* Adjusted font size */
+    }
+    h2 {
+        font-size: 2em; /* Adjusted heading size */
+    }
+}
+
+@media(max-width:650px) {
+    .background-circle .circle {
+        width: 250px; /* Adjusted circle width */
+        height: 250px; /* Adjusted circle height */
+    }
+    .intro {
+        position: relative; /* Positioning for intro */
+        text-align: center; /* Center text */
+    }
+    .background-circle {
+        position: absolute; /* Allows circle to overflow */
+        top: -50px; /* Vertical positioning */
+        left: 50%; /* Horizontal centering */
+        transform: translateX(-50%); /* Adjust positioning */
+    }
+    .intro-text {
+        margin-top: 350px; /* Space between circle and text */
+    }
+    .intro-text h2 {
+        font-size: 2.7rem; /* Adjusted heading size */
+    }
+    .skills-grid {
+        display: grid; /* Grid layout for skills */
+        grid-template-columns: repeat(1, 1fr); /* Two columns */
+        gap: 20px; /* Space between items */
+        justify-items: center; /* Center items */
+        margin-top: 30px; /* Space above grid */
+    }
+}
+
+@media(max-width:450px) {
+    .background-circle .circle {
+        width: 250px; /* Adjusted circle width */
+        height: 250px; /* Adjusted circle height */
+    }
+    .navbar {
+        display: flex; /* Flex container for navbar */
+        flex-direction: column; /* Column layout */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items */
+    }
+}
+
+@media(max-width:300px) {
+    .background-circle .circle {
+        width: 150px; /* Adjusted circle width */
+        height: 150px; /* Adjusted circle height */
+    }
+    .intro-text h2 {
+        font-size: 1.8rem; /* Adjusted heading size */
+    }
+    .intro-text p {
+        width: 70%; /* Maintain paragraph width */
+        font-size: 0.5rem; /* Adjusted font size */
+    }
+    .navbar {
+        display: flex; /* Flex container for navbar */
+        flex-direction: column; /* Column layout */
+        justify-content: center; /* Center items */
+        align-items: center; /* Center items */
+    }
+}

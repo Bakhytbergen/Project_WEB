@@ -1,0 +1,98 @@
+@import url(./header.css); 
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Arial', sans-serif; /* Set font */
+    background: linear-gradient(145deg, #2E0249, #040F3D); /* Background gradient */
+    color: white; /* Text color */
+}
+
+main {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.family-section {
+    text-align: center; /* Center text */
+    width: 90%; /* Set section width */
+}
+
+.family-grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    margin-top: 20px; /* Space above grid */
+}
+
+.family-member {
+    display: flex; /* Use flexbox for family member layout */
+    flex-direction: column; /* Vertical alignment */
+    align-items: center; /* Center items */
+    margin-bottom: 20px; /* Space below each member */
+    background: linear-gradient(145deg, #8a63b8, #003366); /* Background gradient */
+    border-radius: 10px; /* Rounded corners */
+ 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    
+    border: 2px solid transparent; /* Initial transparent border */
+
+    padding: 15px; /* Inner padding */
+    
+    transition: transform 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.family-member:hover {
+    transform: scale(1.02); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    
+    background: linear-gradient(135deg, #003366, #8a63b8); /* Background change on hover */
+    border-color: #FFD700; /* Border color change on hover */
+}
+
+.family-member img {
+    width: 100px; /* Set image width */
+    height: 100px; /* Set image height */
+    border-radius: 50%; /* Round image */
+    object-fit: cover; /* Cover image inside circle */
+    margin-bottom: 10px; /* Space below image */
+    transition: transform 0.2s; /* Smooth transition for image */
+}
+
+.family-member img:hover {
+    transform: scale(1.1); /* Scale up image on hover */
+}
+
+.family-member p {
+    margin: 0; /* Remove paragraph margin */
+    font-size: 1.2rem; /* Set font size */
+    color: white; /* White text for visibility */
+}
+
+/* Line between photo and text */
+.family-member::after {
+    content: ''; /* Create an empty block */
+    display: block; /* Block display */
+    width: 100%; /* Full width line */
+    height: 2px; /* Line height */
+    background-color: white; /* Line color */
+    margin: 10px 0; /* Margin above and below line */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.family-member:hover::after {
+    background-color: #8a63b8; /* Line color change on hover */
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .family-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .family-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}

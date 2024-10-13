@@ -1,0 +1,94 @@
+@import url(./header.css);  /* Importing header styles */
+body {
+    font-family: Arial, sans-serif; /* Setting font for the body */
+    background: linear-gradient(145deg, #2E0249, #040F3D); /* Background gradient */
+    margin: 0; /* Removing default margin */
+    padding: 20px; /* Adding padding */
+}
+
+.container {
+    max-width: 70%; /* Container width */
+    margin: auto; /* Centering container */
+    padding: 20px; /* Internal padding */
+}
+
+.container-hobby {
+    display: grid; /* Grid layout for hobbies */
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 20px; /* Gap between items */
+    margin-top: 20px; /* Top margin */
+}
+
+h1 {
+    text-align: center; /* Centering the heading */
+    color: white; /* Heading color */
+}
+
+.hobby {
+    display: flex; /* Flexbox for hobby items */
+    flex-direction: column; /* Vertical layout */
+    align-items: center; /* Centering items */
+    margin-bottom: 20px; /* Bottom margin */
+    background: linear-gradient(145deg, #8a63b8, #003366); /* Background gradient */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border: 2px solid transparent; /* Initial transparent border */
+    padding: 15px; /* Internal padding */
+    transition: transform 0.3s, border-color 0.3s; /* Transition effects */
+}
+
+.hobby:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    background: linear-gradient(135deg, #003366, #8a63b8); /* Hover background */
+    border-color: #FFD700; /* Hover border color */
+}
+
+.hobby-image {
+    width: 70%; /* Image width */
+    height: auto; /* Auto height */
+    border-radius: 8px; /* Rounded image corners */
+    margin-bottom: 10px; /* Bottom margin for image */
+}
+
+.hobby-description h2 {
+    margin: 0; /* No margin for heading */
+    color: white; /* Heading color */
+}
+
+.hobby-description p {
+    margin: 5px 0 0; /* Margin for paragraph */
+    color: white; /* Paragraph color */
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    .hobby {
+        flex-direction: column; /* Vertical layout on smaller screens */
+    }
+
+    .hobby-image {
+        width: 100%; /* Full width on mobile */
+    }
+    .container-hobby {
+        display: grid; /* Grid layout */
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px; /* Gap between items */
+        margin-top: 20px; /* Top margin */
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%; /* Full width container */
+    }
+    .container-hobby {
+        display: grid; /* Grid layout */
+        grid-template-columns: repeat(1, 1fr); /* One column */
+        gap: 20px; /* Gap between items */
+        margin-top: 20px; /* Top margin */
+    }
+    .hobby {
+        align-items: center; /* Center items */
+    }
+}

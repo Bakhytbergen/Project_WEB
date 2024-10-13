@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/contact.css"> <!-- Link to the contact page stylesheet -->
+</head>
+<body>
+    <header>
+        <nav class="navbar"> <!-- Navigation bar -->
+            <div class="logo">
+                <h1>Bakhyt</h1> <!-- Logo -->
+            </div>
+            <ul class="nav-links"> <!-- Navigation links -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container"> <!-- Main container for contact form -->
+        <h1>Contact Us</h1> <!-- Page heading -->
+        <form> <!-- Contact form -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required> <!-- Input for name -->
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required> <!-- Input for email -->
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea> <!-- Textarea for message -->
+
+            <button type="submit">Send Message</button> <!-- Submit button -->
+        </form>
+
+        <div class="map-container"> <!-- Container for map -->
+            <h2>Our Location</h2> <!-- Map heading -->
+            <img src="img/place-sdu.png" alt="Map Location"> <!-- Image of map location -->
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content"> <!-- Footer content -->
+            <p>&copy; 2024 Bakhytbergen. All rights reserved.</p> <!-- Copyright notice -->
+        </div>
+    </footer>
+</body>
+</html>

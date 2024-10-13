@@ -1,0 +1,188 @@
+@import url(./footer.css); /* Importing footer styles */
+header {
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    border-radius: 800px; /* Rounded corners */
+    width: 60%; /* Header width */
+    margin: 30px auto; /* Centering header */
+    padding: 20px 0; /* Vertical padding */
+}
+
+.navbar {
+    display: flex; /* Flexbox for navbar */
+    justify-content: center; /* Centering content */
+    align-items: center; /* Aligning items vertically */
+}
+
+.nav-links {
+    display: flex; /* Flexbox for nav links */
+    gap: 20px; /* Spacing between links */
+    text-decoration: none; /* Removing underline */
+}
+
+.nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Removing underline */
+}
+.logo h1{
+    color: white; /* Logo text color */
+}
+.nav-links li{
+    color: white; /* List item color */
+}
+
+/* Media queries for responsive design */
+@media(max-width:950px){
+    .navbar {
+        display: flex; /* Flexbox for navbar */
+        justify-content: center; /* Centering content */
+        align-items: center; /* Aligning items vertically */
+    }
+    
+    .nav-links {
+        display: flex; /* Flexbox for nav links */
+        gap: 20px; /* Spacing between links */
+        text-decoration: none; /* Removing underline */
+    }
+    
+    .nav-links a {
+        color: white; /* Link color */
+        text-decoration: none; /* Removing underline */
+        font-size: 0.9em; /* Font size adjustment */
+    }
+    
+    .logo h1{
+        font-size: 1.0em; /* Logo font size */
+    }
+   
+    header {
+        background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+        border-radius: 800px; /* Rounded corners */
+        width: 70%; /* Header width */
+        margin: 30px auto; /* Centering header */
+        padding: 20px 0; /* Vertical padding */
+    }
+}
+
+@media(max-width:650px){
+    .navbar {
+        display: flex; /* Flexbox for navbar */
+        flex-direction: column; /* Vertical layout */
+        justify-content: center; /* Centering content */
+        align-items: center; /* Aligning items vertically */
+    }
+    
+    .nav-links {
+        display: flex; /* Flexbox for nav links */
+        gap: 20px; /* Spacing between links */
+        text-decoration: none; /* Removing underline */
+    }
+    
+    .nav-links a {
+        color: white; /* Link color */
+        text-decoration: none; /* Removing underline */
+        font-size: 0.9em; /* Font size adjustment */
+    }
+    
+    .logo h1{
+        font-size: 1.0em; /* Logo font size */
+    }
+    
+    header {
+        background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+        border-radius: 0px; /* No rounded corners */
+        width: 90%; /* Header width */
+        margin: 30px auto; /* Centering header */
+        padding: 20px 0; /* Vertical padding */
+    }
+}
+
+@media(max-width:450px){
+    .navbar {
+        display: flex; /* Flexbox for navbar */
+        flex-direction: column; /* Vertical layout */
+        justify-content: center; /* Centering content */
+        align-items: center; /* Aligning items vertically */
+        width: 90%; /* Navbar width */
+        margin: auto; /* Centering navbar */
+    }
+    
+    .nav-links {
+        display: flex; /* Flexbox for nav links */
+        width: 100%; /* Full width */
+        gap: 20px; /* Spacing between links */
+        text-decoration: none; /* Removing underline */
+        display: grid; /* Grid layout for links */
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+    }
+    
+    .nav-links a {
+        color: white; /* Link color */
+        text-decoration: none; /* Removing underline */
+        font-size: 0.8em; /* Font size adjustment */
+    }
+    
+    .logo h1{
+        font-size: 1.0em; /* Logo font size */
+        display: none; /* Hiding logo */
+    }
+    
+    header {
+        background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+        border-radius: 0px; /* No rounded corners */
+        width: 90%; /* Header width */
+        margin: auto; /* Centering header */
+        padding: 20px 0; /* Vertical padding */
+        top: 30px; /* Positioning */
+        justify-content: center; /* Centering content */
+        align-items: center; /* Aligning items vertically */
+        margin: 30px auto; /* Centering header */
+    }
+}
+
+@media(max-width:300px){
+    a {
+        color: #00bfff; /* Link color */
+        text-decoration: none; /* Removing underline */
+    }
+    
+    .navbar {
+        display: flex; /* Flexbox for navbar */
+        flex-direction: column; /* Vertical layout */
+        justify-content: center; /* Centering content */
+        align-items: center; /* Aligning items vertically */
+        width: 90%; /* Navbar width */
+        margin: auto; /* Centering navbar */
+    }
+    
+    .nav-links {
+        display: flex; /* Flexbox for nav links */
+        width: 100%; /* Full width */
+        gap: 20px; /* Spacing between links */
+        text-decoration: none; /* Removing underline */
+        display: grid; /* Grid layout for links */
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+    }
+    
+    .nav-links a {
+        color: white; /* Link color */
+        text-decoration: none; /* Removing underline */
+        font-size: 0.8em; /* Font size adjustment */
+    }
+    
+    .logo h1{
+        font-size: 1.0em; /* Logo font size */
+        display: none; /* Hiding logo */
+    }
+    
+    header {
+        background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+        border-radius: 0px; /* No rounded corners */
+        width: 90%; /* Header width */
+        margin: auto; /* Centering header */
+        padding: 20px 0; /* Vertical padding */
+        top: 30px; /* Positioning */
+        justify-content: center; /* Centering content */
+        align-items: center; /* Aligning items vertically */
+        margin: 30px auto; /* Centering header */
+    }
+}

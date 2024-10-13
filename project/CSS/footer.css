@@ -1,0 +1,14 @@
+footer {
+    background: linear-gradient(145deg, #2E0249, #040F3D); /* Gradient background */
+    color: white; /* Text color */
+    text-align: center; /* Centering text */
+    padding: 20px 0; /* Vertical padding */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Aligning to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-content {
+    max-width: 1000px; /* Maximum width for content */
+    margin: auto; /* Centering content */
+}

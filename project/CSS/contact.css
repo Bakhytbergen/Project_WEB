@@ -1,0 +1,79 @@
+@import url(./header.css); /* Import styles from header.css */
+
+body {
+    font-family: Arial, sans-serif; /* Set font family */
+    background: linear-gradient(145deg, #2E0249, #040F3D); /* Background gradient */
+    padding: 20px; /* Add padding around the body */
+    color: white; /* Set default text color */
+}
+
+.container {
+    max-width: 600px; /* Maximum width of the container */
+    margin: auto; /* Center the container */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 20px; /* Inner padding for the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+h1 {
+    text-align: center; /* Center align heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+label {
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input, textarea {
+    padding: 10px; /* Inner padding for inputs and textareas */
+    margin-bottom: 15px; /* Space below inputs and textareas */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    padding: 10px; /* Inner padding for button */
+    background: #FFD700; /* Button background color */
+    border: none; /* No border for button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button text */
+    transition: 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background: #FFC107; /* Change background color on hover */
+}
+
+.social-media {
+    text-align: center; /* Center align social media links */
+    margin-top: 20px; /* Space above social media section */
+}
+
+.social-media a {
+    margin: 0 10px; /* Space between social media links */
+    color: white; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-media img {
+    width: 24px; /* Set width for social media icons */
+    height: 24px; /* Set height for social media icons */
+}
+
+.map-container {
+    margin-top: 30px; /* Space above map container */
+    text-align: center; /* Center align map container */
+}
+
+.map-container img {
+    width: 100%; /* Full width for map image */
+    max-width: 600px; /* Limit maximum width of map image */
+    border-radius: 10px; /* Rounded corners for map image */
+}

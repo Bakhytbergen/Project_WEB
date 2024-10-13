@@ -1,0 +1,106 @@
+/* Main styles */
+@import url(./header.css);  /* Import header styles */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Arial', sans-serif; /* Set font */
+    background: linear-gradient(145deg, #2E0249, #040F3D); /* Background gradient */
+    color: #333; /* Default text color */
+}
+
+main {
+    width: 80%; /* Set main section width */
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+    margin: auto; /* Center main section */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+}
+
+h1, h2 {
+    color: white; /* White text for headings */
+    text-align: center; /* Center headings */
+}
+
+.education-section {
+    width: 100%; /* Full width for education section */
+}
+
+.education-section .container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    margin-top: 20px; /* Space above container */
+}
+
+/* Gradient background for cards */
+.card {
+    background: linear-gradient(145deg, #8a63b8, #003366); /* Gradient background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    border: 2px solid transparent; /* Initial transparent border */
+}
+
+.card img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Auto height for images */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.card h3 {
+    margin: 10px 0; /* Margin above and below headings */
+    color: #fff; /* White color for headings */
+}
+
+.card p {
+    color: #f0f0f0; /* Light gray color for paragraph text */
+    font-size: 1rem; /* Font size for paragraph text */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Scale up on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    
+    background: linear-gradient(135deg, #003366, #8a63b8); /* Change background on hover */
+    border-color: #FFD700; /* Border color change on hover */
+}
+
+.education-table {
+    width: 100%; /* Full width for table */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above table */
+    color: white; /* White text for table */
+}
+
+.education-table th, .education-table td {
+    padding: 10px; /* Inner padding for table cells */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd; /* Light gray border */
+}
+
+.education-table th {
+    background-color: #2E0249; /* Background color for table headers */
+    color: white; /* White text for headers */
+}
+
+.education-table tr:hover {
+    color: black;
+    background-color: #ddd; /* Change background on row hover */
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .education-section .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .education-section .container {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}
